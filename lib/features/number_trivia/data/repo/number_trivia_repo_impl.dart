@@ -8,6 +8,7 @@ import 'package:clean_architecture_flutter/features/number_trivia/domain/repo/nu
 import 'package:dartz/dartz.dart';
 import 'package:meta/meta.dart';
 
+//type def is kind of passing function as parameter
 typedef Future<NumberTrivia> _ConcreteOrRandomChooser();
 
 class NumberTriviaRepositoryImpl implements NumberTriviaRepository {

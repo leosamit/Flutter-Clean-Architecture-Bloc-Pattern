@@ -59,7 +59,6 @@ class _TriviaControlsState extends State<TriviaControls> {
   }
 
   void dispatchConcrete() {
-    // Clearing the TextField to prepare it for the next inputted number
     controller.clear();
     BlocProvider.of<NumberTriviaBloc>(context)
         .dispatch(GetTriviaForConcreteNumber(inputStr));
